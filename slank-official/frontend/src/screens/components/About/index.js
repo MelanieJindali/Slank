@@ -4,7 +4,7 @@ import Slank from './DJSlank2.png'
 const About = () => {
 	return (
 		<>
-			<div className='wrapper'>
+			<div className='wrapper about' id='about'>
 				<img src={Slank} className='about-img' alt='Slank DJing' />
 				<div className='about-desc'>
 					<h1>About</h1>

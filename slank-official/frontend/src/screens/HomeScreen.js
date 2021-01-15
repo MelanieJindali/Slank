@@ -5,7 +5,7 @@ import About from './components/About'
 const HomeScreen = () => {
 	return (
 		<>
-			<h1>Slank Official</h1>
+			<h1>Set the vibe right</h1>
       <Hero />
       <About />
 		</>

@@ -1,31 +1,47 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-  background: #0E1334;
+	margin: 0 auto;
 }
 
 .logo {
-  width: 150px;
+	width: 150px;
 }
 
 .hero-img {
-  background: linear-gradient(to bottom, rgba(252, 70, 107, 0.4) 0%, rgba(63, 94, 251, 0.4) 100%);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: -2;
+	background: linear-gradient(
+		to bottom,
+		rgba(252, 70, 107, 0.4) 0%,
+		rgba(63, 94, 251, 0.4) 100%
+	);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -2;
 }
 
 .wrapper {
-  margin: 0 auto;
-  display: flex;
-  align-content: center;
+	display: flex;
+}
+
+.about {
+	background-color: #0e1334;
+	margin-top: 500px;
+	padding: 3em 6em;
 }
 
 .about-img {
-  width: 500px;
+	width: 500px;
 }
 
 .about-desc {
-  flex-direction: column;
+	flex-direction: column;
 }
