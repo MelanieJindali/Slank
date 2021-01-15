@@ -16,3 +16,16 @@ body {
   z-index: -2;
 }
 
+.wrapper {
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+}
+
+.about-img {
+  width: 500px;
+}
+
+.about-desc {
+  flex-direction: column;
+}
