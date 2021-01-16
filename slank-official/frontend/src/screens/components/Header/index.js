@@ -7,7 +7,9 @@ const Navbar = () => {
 	return (
 		<>
 			<Socials />
+      <a href='/'>
 			<img src={Logo} className='logo' alt='Slank logo white' />
+      </a>
 			<NavLink exact to='/'>
 				Home
 			</NavLink>

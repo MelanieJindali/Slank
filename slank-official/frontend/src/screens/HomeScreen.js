@@ -1,13 +1,14 @@
 import React from 'react'
 import Hero from './components/Hero'
 import About from './components/About'
+import SongCard from './components/SongCard'
 
 const HomeScreen = () => {
 	return (
 		<>
-			<h1>Set the vibe right</h1>
       <Hero />
       <About />
+      <SongCard />
 		</>
 	)
 }

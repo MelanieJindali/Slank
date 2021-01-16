@@ -1,20 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&family=PT+Mono&display=swap');
+
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
 }
+
+/* Custom root properties */
+:root {
+	--ff-main: 'Nunito Sans', sans-serif;
+	--ff-header: 'PT Mono', monospace;
+
+	--fw-reg: 400;
+	--fw-bold: 700;
+	--fw-black: 800;
+
+	--color-light: #ffffff;
+	--color-dark: #303030;
+	--color-background:  #0e1334;
+	--color-acct1:  #3F5EFB;
+	--color-acct2:  #E20B50;
+
+	--fs-h1: 3rem;
+	--fs-h2: 2.25rem;
+	--fs-h3: 1.25rem;
+	--fs-body: 1rem;
+
+	--shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+		0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 600px) {
+	:root {
+		--fs-h1: 4.5rem;
+		--fs-h2: 3.75rem;
+		--fs-h3: 1.5rem;
+		--fs-body: 1.125rem;
+	}
+}
+
+/* General styles */
 html {
 	scroll-behavior: smooth;
 }
 
 body {
+	background: var(--color-background);
+	color: var(--color-light);
 	margin: 0 auto;
+	font-family: var(--ff-main);
+	font-size: var(--fs-body);
+	line-height: 1.6;
+	overflow-x: hidden;
 }
 
+section {
+	padding: 5em 2em;
+}
+
+.wrapper {
+	display: flex;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+:focus {
+	outline: 3px solid var(--color-acct1);
+	outline-offset: 3px;
+}
+
+/* Navbar */
 .logo {
 	width: 150px;
 }
 
+
+/* Hero Section */
 .hero-img {
 	background: linear-gradient(
 		to bottom,
@@ -28,10 +92,11 @@ body {
 	z-index: -2;
 }
 
-.wrapper {
-	display: flex;
+.hero-text {
+  font-family: var(--ff-header);
 }
 
+/* About Section */
 .about {
 	background-color: #0e1334;
 	margin-top: 500px;
