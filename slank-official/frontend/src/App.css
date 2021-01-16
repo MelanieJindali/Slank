@@ -154,6 +154,34 @@ button:focus {
   border-radius: 50px;
 }
 
+.hero-divider {
+  position: relative;
+  bottom: 195px;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+}
+
+.hero-divider svg {
+  position: relative;
+  display: block;
+  width: calc(200% + 1.3px);
+  height: 214px;
+  transform: rotateY(180deg);
+}
+
+.hero-divider .shape-fill {
+  fill: #0E1334;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero-divider svg {
+      width: calc(190% + 1.3px);
+      height: 195px;
+  }
+}
+
 /* About Section */
 .about {
 	background-color: #0e1334;
@@ -161,11 +189,24 @@ button:focus {
 }
 
 .about-img {
-	width: 500px;
+	max-width: 500px;
 }
 
 .about-desc {
-	flex-direction: column;
+  flex-direction: column;
+  max-width: 500px;
+  margin-left: 3em;
+}
+
+.spdj .row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.spdj img {
+  max-width: 300px;
+  margin: 0 3em;
 }
 
 /* Song Section */
