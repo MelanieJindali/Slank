@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2c30ef6e.chunk.css",
+    "main.js": "/static/js/main.c3198c8b.chunk.js",
+    "main.js.map": "/static/js/main.c3198c8b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e49fbc86.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e49fbc86.js.map",
+    "static/js/2.b94a828d.chunk.js": "/static/js/2.b94a828d.chunk.js",
+    "static/js/2.b94a828d.chunk.js.map": "/static/js/2.b94a828d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.2c30ef6e.chunk.css.map": "/static/css/main.2c30ef6e.chunk.css.map",
+    "static/js/2.b94a828d.chunk.js.LICENSE.txt": "/static/js/2.b94a828d.chunk.js.LICENSE.txt",
+    "static/media/Beslic Bash.9c89726f.PNG": "/static/media/Beslic Bash.9c89726f.PNG",
+    "static/media/Crowd.0682a25a.jpg": "/static/media/Crowd.0682a25a.jpg",
+    "static/media/DJSlank1.ce8f30c5.jpg": "/static/media/DJSlank1.ce8f30c5.jpg",
+    "static/media/DJSlank2.f5d9b49f.png": "/static/media/DJSlank2.f5d9b49f.png",
+    "static/media/Quarantine Dreams.5f9fcbae.jpg": "/static/media/Quarantine Dreams.5f9fcbae.jpg",
+    "static/media/SlankWhiteLogo.a35b6a74.png": "/static/media/SlankWhiteLogo.a35b6a74.png",
+    "static/media/Time Zone.c3caf644.PNG": "/static/media/Time Zone.c3caf644.PNG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e49fbc86.js",
+    "static/js/2.b94a828d.chunk.js",
+    "static/css/main.2c30ef6e.chunk.css",
+    "static/js/main.c3198c8b.chunk.js"
+  ]
+}

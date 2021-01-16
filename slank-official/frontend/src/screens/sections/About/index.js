@@ -1,5 +1,6 @@
 import React from 'react'
 import Slank from './DJSlank2.png'
+import SPDJ from '../../components/SPDJ'
 
 const About = () => {
 	return (
@@ -24,6 +25,7 @@ const About = () => {
 					merchandise. He strives to collaborate with artists in his community
 					and even hosts workshops teaching others how to DJ and produce.
 				</p>
+        <SPDJ />
 			</div>
 		</div>
 	)
