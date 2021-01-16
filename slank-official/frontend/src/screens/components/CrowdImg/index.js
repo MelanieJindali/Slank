@@ -1,9 +1,11 @@
 import React from 'react'
 import Crowd from './Crowd.jpg'
+import SongCards from '../SongCards'
 
 const CrowdImg = () => {
 	return (
 		<>
+			<SongCards />
 			<div className='divider'>
 				<svg
 					data-name='Layer 1'

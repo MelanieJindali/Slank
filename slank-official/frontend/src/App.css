@@ -16,7 +16,7 @@
 	--fw-black: 800;
 
 	--color-light: #ffffff;
-	--color-dark: #303030;
+	--color-dark: #0f0f0f;
 	--color-background: #0e1334;
 	--color-acct1: #3f5efb;
 	--color-acct2: #e20b50;
@@ -121,7 +121,8 @@ button:focus {
 
 /* Hero Section */
 .hero-img {
-	position: relative;
+  position: relative;
+  margin: 0 auto;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -184,8 +185,12 @@ button:focus {
 
 /* About Section */
 .about {
-	background-color: #0e1334;
-	padding: 3em 6em;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -8em;
+  background-color: var(--color-background);
+  margin: 0 auto;
 }
 
 .about-img {
@@ -198,10 +203,28 @@ button:focus {
   margin-left: 3em;
 }
 
+.spdj {
+  position: relative;
+  width: 100%;
+}
+
+.spdj::before {    
+  content: "";
+  background-image: url('./screens/components/SPDJ/SPDJ-BG.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.25;
+  z-index: -1;
+}
+
 .spdj .row {
   display: flex;
   justify-content: center;
-  margin-bottom: 2em;
+  padding: 4em 0;
 }
 
 .spdj img {
@@ -210,14 +233,27 @@ button:focus {
 }
 
 /* Song Section */
+.album-container {
+  background-color: var(--color-dark);
+}
+
 .song-section {
   display: flex;
   position: relative;
 	justify-content: center;
 	margin: 0;
   margin-top: 2em;
-  bottom: -25em;
+  bottom: -20em;
 	z-index: 3;
+}
+
+.ss-header {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  font-family: var(--ff-header);
+  font-size: var(--fs-h1);
+  bottom: -3em;
 }
 
 .song-section img {
@@ -278,7 +314,7 @@ button:focus {
 }
 
 .divider .shape-fill {
-  fill: #0E1334;
+  fill: var(--color-dark);
 }
 
 /** For tablet devices **/
