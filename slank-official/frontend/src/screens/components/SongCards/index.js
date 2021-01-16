@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const SongCards = () => {
 	return (
 		<div className='album-container'>
-    <h1 className='ss-header'>Check out SLANK's latest projects</h1>
+			<h1 className='ss-header'>Check out SLANK's latest projects</h1>
 			<div className='song-section'>
 				<div className='song-card'>
 					<h3>Beslic Bash</h3>

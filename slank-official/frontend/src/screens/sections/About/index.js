@@ -1,6 +1,5 @@
 import React from 'react'
 import Slank from './DJSlank2.png'
-import SPDJ from '../../components/SPDJ'
 
 const About = () => {
 	return (
@@ -29,7 +28,6 @@ const About = () => {
 					</p>
 				</div>
 			</div>
-			<SPDJ />
 		</>
 	)
 }

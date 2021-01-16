@@ -53,19 +53,16 @@ html {
 body {
 	background: var(--color-background);
 	color: var(--color-light);
-	margin: 0 auto;
+  margin: 0 auto;
 	font-family: var(--ff-main);
 	font-size: var(--fs-body);
 	line-height: 1.6;
 	overflow-x: hidden;
 }
 
-section {
-	padding: 5em 2em;
-}
-
 .wrapper {
-	display: flex;
+  display: flex;
+  justify-content: center;
 }
 
 img {
@@ -157,14 +154,16 @@ button:focus {
 
 .hero-divider {
   position: relative;
-  bottom: 195px;
+  bottom: 200px;
   left: 0;
   width: 100%;
+  margin: 0 auto;
   line-height: 0;
 }
 
 .hero-divider svg {
   position: relative;
+  margin: 0 auto;
   display: block;
   width: calc(200% + 1.3px);
   height: 214px;
@@ -206,11 +205,12 @@ button:focus {
 .spdj {
   position: relative;
   width: 100%;
+  margin: 0 auto;
 }
 
 .spdj::before {    
   content: "";
-  background-image: url('./screens/components/SPDJ/SPDJ-BG.jpg');
+  background-image: url('./screens/sections/SPDJ/SPDJ-BG.jpg');
   background-size: cover;
   position: absolute;
   top: 0px;
@@ -234,7 +234,7 @@ button:focus {
 
 /* Song Section */
 .album-container {
-  background-color: var(--color-dark);
+  background-color: var(--color-background);
 }
 
 .song-section {
@@ -314,7 +314,7 @@ button:focus {
 }
 
 .divider .shape-fill {
-  fill: var(--color-dark);
+  fill: var(--color-background);
 }
 
 /** For tablet devices **/
@@ -323,4 +323,42 @@ button:focus {
       width: calc(190% + 1.3px);
       height: 195px;
   }
+}
+
+/* Music Videos Section */
+.collab {
+  text-align: center;
+  padding: 4em 0 6em 0;
+}
+
+.collab p {
+  margin: 0;
+  font-style: italic;
+}
+
+.collab h1 {
+  margin: 0;
+  font-family: var(--ff-header);
+  font-size: var(--fs-h2);
+}
+
+.videos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.videos h3 {
+  text-align: center;
+}
+
+.cta-ig {
+  background: var(--color-acct2);
+  text-decoration: none;
+  letter-spacing: .2em;
+  font-size: var(--fs-body);
+  font-weight: var(--fw-bold);
+  color: var(--color-light);
+  padding: 1.1em 2em;
+  border: none;
+  border-radius: 50px;
 }
