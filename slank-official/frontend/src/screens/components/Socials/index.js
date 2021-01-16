@@ -8,20 +8,20 @@ library.add(fab, faMusic)
 
 const Socials = () => {
 	return (
-		<div>
-			<a href='https://distrokid.com/hyperfollow/slank1/quarantine-dreams'>
+		<div className='top-socials'>
+			<a href='https://distrokid.com/hyperfollow/slank1/quarantine-dreams' target="_blank">
 				<FontAwesomeIcon icon={faMusic} />
 			</a>
-			<a href='https://www.instagram.com/matt_bslanky/'>
+			<a href='https://www.instagram.com/matt_bslanky/' target="_blank">
 				<FontAwesomeIcon icon={['fab', 'instagram']} />
 			</a>
-			<a href='https://open.spotify.com/artist/6UIYv81CkOjU6Abv0idBYr'>
+			<a href='https://open.spotify.com/artist/6UIYv81CkOjU6Abv0idBYr' target="_blank">
 				<FontAwesomeIcon icon={['fab', 'spotify']} />
 			</a>
-			<a href='https://www.facebook.com/Slank-109910190555708'>
+			<a href='https://www.facebook.com/Slank-109910190555708' target="_blank">
 				<FontAwesomeIcon icon={['fab', 'facebook']} />
 			</a>
-			<a href='https://soundcloud.com/mc_slank'>
+			<a href='https://soundcloud.com/mc_slank' target="_blank">
 				<FontAwesomeIcon icon={['fab', 'soundcloud']} />
 			</a>
 		</div>

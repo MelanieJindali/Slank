@@ -3,8 +3,12 @@ import Slank1 from './DJSlank1.jpg'
 
 const Hero = () => {
 	return (
-    <>
-			<h1 className='hero-text'>Set the vibe right</h1>
+		<>
+			<span className='hero-text'>
+				<a href='https://distrokid.com/hyperfollow/slank1/quarantine-dreams' target="_blank">
+					<button>LISTEN</button>
+				</a>
+			</span>
 			<img src={Slank1} className='hero-img' alt='Slank and turntables' />
 		</>
 	)

@@ -1,14 +1,16 @@
 import React from 'react'
-import Hero from './components/Hero'
-import About from './components/About'
-import SongCard from './components/SongCard'
+import Hero from './sections/Hero'
+import About from './sections/About'
+import SongCards from './components/SongCards'
+import CrowdImg from './components/CrowdImg'
 
 const HomeScreen = () => {
 	return (
 		<>
       <Hero />
       <About />
-      <SongCard />
+      <SongCards />
+      <CrowdImg />
 		</>
 	)
 }
