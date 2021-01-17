@@ -15,10 +15,10 @@ const Navbar = () => {
 					<NavLink className='nav-item' exact to='/'>
 						Home
 					</NavLink>
-					<NavLink className='nav-item' to='/#about'>About</NavLink>
-					<NavLink className='nav-item' to='/#music'>Music</NavLink>
-					<NavLink className='nav-item' to='/#merch'>Merch</NavLink>
-					<NavLink className='nav-item' to='/#contact'>Contact</NavLink>
+					<a className='nav-item' href='#about'>About</a>
+					<a className='nav-item' href='#music'>Music</a>
+					<a className='nav-item' href='#merch'>Merch</a>
+					<a className='nav-item' href='#contact'>Contact</a>
 				</div>
 			</div>
 		</>

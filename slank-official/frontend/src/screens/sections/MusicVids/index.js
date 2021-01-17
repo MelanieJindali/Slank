@@ -14,10 +14,11 @@ const MusicVids = () => {
 						width='560'
 						height='315'
 						src='https://www.youtube.com/embed/Fbc6D30AP-I'
-						frameborder='0'
+						frameBorder='0'
 						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-						allowfullscreen
+						allowFullScreen
 					></iframe>
+					<p>A description of the inspiration behind the instrumental...</p>
 				</div>
 				<div>
 					<h3>Willy Bandz - "Don't Come Here"</h3>
@@ -25,15 +26,16 @@ const MusicVids = () => {
 						width='560'
 						height='315'
 						src='https://www.youtube.com/embed/FTY3UGt10xU'
-						frameborder='0'
+						frameBorder='0'
 						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-						allowfullscreen
+						allowFullScreen
 					></iframe>
+					<p>A description of the inspiration behind the instrumental...</p>
 				</div>
 			</div>
-			<div className='wrapper'>
+			<div className='wrapper ig-cta'>
 				<a href='https://www.instagram.com/matt_bslanky/' target='_blank'>
-					<button className='cta-ig'>STAY UPDATED VIA INSTAGRAM</button>
+					<p>STAY UPDATED VIA INSTAGRAM</p>
 				</a>
 			</div>
 		</>
