@@ -337,7 +337,8 @@ button:focus {
 }
 
 .collab h1,
-.merch h1 {
+.merch h1,
+.contact-section h1 {
 	margin: 0;
 	font-family: var(--ff-header);
 	font-size: var(--fs-h2);
@@ -364,24 +365,24 @@ button:focus {
 	color: var(--color-light);
 	padding: 1.1em 2em;
 	border: none;
-  border-radius: 50px;
-  margin-bottom: 7em;
+	border-radius: 50px;
+	margin-bottom: 7em;
 }
 
 /* Merch Section */
 .merch {
-  position: relative;
-  margin: 0 auto;
+	position: relative;
+	margin: 0 auto;
 	padding: 4em 0;
 }
 
 .merch h1 {
-  text-align: center;
-  margin-bottom: 2em;
+	text-align: center;
+	margin-bottom: 2em;
 }
 
 .merch img {
-  width: 700px;
+	width: 700px;
 }
 
 .merch::before {
@@ -398,8 +399,64 @@ button:focus {
 }
 
 .merch-text {
-  display: block;
-  justify-content: space-between;
-  max-width: 250px;
-  margin-left: 2em;
+	display: block;
+	justify-content: space-between;
+	max-width: 250px;
+	margin-left: 2em;
+}
+
+/* Contact */
+.contact-section {
+  margin: 0 auto;
+  padding-top: 4em;
+  position: relative;
+}
+
+.contact-section::before {
+	content: '';
+	background-image: url('./screens/sections/Contact/ContactBG.jpg');
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.25;
+	z-index: -1;
+}
+
+.contact-text {
+  text-align: center;
+}
+
+.contact-text p {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 0 1em;
+}
+
+.contact-text h4 {
+  margin-top: 4em;
+}
+.contact-form {
+	display: flex;
+	margin: 0 auto;
+	flex-direction: column;
+	max-width: 700px;
+}
+
+.email-btn {
+	background: var(--color-acct2);
+	padding: 1.1em 2em;
+	border: none;
+	border-radius: 50px;
+	margin: 0 0 7em 0;
+}
+
+.email-btn a {
+	letter-spacing: 0.2em;
+	text-decoration: none;
+	font-size: var(--fs-body);
+	font-weight: var(--fw-bold);
+	color: var(--color-light);
 }
