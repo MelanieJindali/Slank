@@ -421,7 +421,7 @@ button:focus {
 	right: 0px;
 	bottom: 0px;
 	left: 0px;
-	opacity: 0.25;
+	opacity: 0.65;
 	z-index: -1;
 }
 
@@ -459,4 +459,28 @@ button:focus {
 	font-size: var(--fs-body);
 	font-weight: var(--fw-bold);
 	color: var(--color-light);
+}
+
+/* Footer */
+.footer {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: .6em;
+  background-color: var(--color-dark);
+}
+
+.footer a {
+	text-decoration: none;
+	font-size: 20px;
+	color: var(--color-acct1);
+}
+
+.pad-social {
+	padding-right: 1em;
+}
+
+.footer p {
+  color: gray;
+  font-size: 10px;
 }

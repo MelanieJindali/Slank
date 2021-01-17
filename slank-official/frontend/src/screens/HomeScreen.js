@@ -6,6 +6,8 @@ import SPDJ from './sections/SPDJ'
 import MusicVids from './sections/MusicVids'
 import Merch from './sections/Merch'
 import Contact from './sections/Contact'
+import Footer from './sections/Footer'
+
 
 const HomeScreen = () => {
 	return (
@@ -17,6 +19,7 @@ const HomeScreen = () => {
 			<MusicVids />
 			<Merch />
       <Contact />
+      <Footer />
 		</>
 	)
 }
