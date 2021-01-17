@@ -25,6 +25,12 @@ const About = () => {
 						turntables as he produces his own music, music videos, and
 						merchandise. He strives to collaborate with artists in his community
 						and even hosts workshops teaching others how to DJ and produce.
+						<br />
+						<br />
+						As the President of the SPDJ club, Slank is heavily involved in
+						organizing workshops while teaching new members how to turn the
+						tables and produce music. Check out below for more information on
+						SPDJ.
 					</p>
 				</div>
 			</div>

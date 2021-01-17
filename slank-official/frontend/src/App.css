@@ -154,8 +154,10 @@ button:focus {
 
 .hero-divider {
 	position: relative;
+	display: block;
 	bottom: 200px;
 	left: 0;
+	right: 0;
 	width: 100%;
 	margin: 0 auto;
 	line-height: 0;
@@ -167,7 +169,11 @@ button:focus {
 	display: block;
 	width: calc(200% + 1.3px);
 	height: 214px;
-	transform: rotateY(180deg);
+	transform: translateY(-2px) rotateY(180deg);
+}
+
+.hero-divider path {
+	display: block;
 }
 
 .hero-divider .shape-fill {
@@ -178,6 +184,7 @@ button:focus {
 @media (min-width: 768px) and (max-width: 1023px) {
 	.hero-divider svg {
 		width: calc(190% + 1.3px);
+		display: block;
 		height: 195px;
 	}
 }
@@ -202,10 +209,24 @@ button:focus {
 	margin-left: 3em;
 }
 
+.about-desc h1 {
+  font-family: var(--ff-header);
+}
+
 .spdj {
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
+}
+
+.spdj h1 {
+	margin: 0 auto;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.spdj-text {
+	width: 500px;
 }
 
 .spdj::before {
@@ -224,7 +245,7 @@ button:focus {
 .spdj .row {
 	display: flex;
 	justify-content: center;
-	padding: 4em 0;
+	padding: 2em 0;
 }
 
 .spdj img {
@@ -232,9 +253,18 @@ button:focus {
 	margin: 0 3em;
 }
 
+.spdj-icons a {
+	text-decoration: none;
+	font-size: 25px;
+	color: var(--color-light);
+	padding-right: 1em;
+}
+
 /* Song Section */
 .album-container {
-	background-color: var(--color-background);
+  background-color: var(--color-background);
+  margin: 0 auto;
+  height: 300px;
 }
 
 .song-section {
@@ -243,7 +273,7 @@ button:focus {
 	justify-content: center;
 	margin: 0;
 	margin-top: 2em;
-	bottom: -20em;
+	bottom: -7em;
 	z-index: 3;
 }
 
@@ -253,7 +283,7 @@ button:focus {
 	text-align: center;
 	font-family: var(--ff-header);
 	font-size: var(--fs-h1);
-	bottom: -3em;
+	bottom: -1em;
 }
 
 .song-section img {
@@ -328,17 +358,17 @@ button:focus {
 /* Music Videos Section */
 .collab {
 	text-align: center;
-	padding: 4em 0 9em 0;
+	padding: 4em 0 3em 0;
 }
 
 .collab p {
 	margin: 0;
-	font-style: italic;
 }
 
 .collab h1,
 .merch h1,
-.contact-section h1 {
+.contact-section h1,
+.spdj h1 {
 	margin: 0;
 	font-family: var(--ff-header);
 	font-size: var(--fs-h2);
@@ -347,7 +377,27 @@ button:focus {
 .videos {
 	display: flex;
 	justify-content: space-evenly;
-	margin-bottom: 10em;
+  margin-bottom: 5em;
+  text-align: center;
+}
+
+.videos p {
+  font-size: 14px;
+}
+
+.willy {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.willy a {
+  text-decoration: none;
+	font-size: 20px;
+  color: var(--color-acct1);
+}
+
+.willy a:last-child {
+  padding-left: 1em;
 }
 
 .videos h3 {
@@ -366,19 +416,19 @@ button:focus {
 	padding: 1.1em 2em;
 	border: none;
 	border-radius: 50px;
-	margin-bottom: 7em;
+	margin-bottom: 5em;
 }
 
 /* Merch Section */
 .merch {
 	position: relative;
 	margin: 0 auto;
-	padding: 4em 0;
+	padding: 2em 0 5em 0;
 }
 
 .merch h1 {
 	text-align: center;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 }
 
 .merch img {
@@ -407,9 +457,9 @@ button:focus {
 
 /* Contact */
 .contact-section {
-  margin: 0 auto;
-  padding-top: 4em;
-  position: relative;
+	margin: 0 auto;
+	padding-top: 4em;
+	position: relative;
 }
 
 .contact-section::before {
@@ -426,17 +476,17 @@ button:focus {
 }
 
 .contact-text {
-  text-align: center;
+	text-align: center;
 }
 
 .contact-text p {
-  margin: 0 auto;
-  max-width: 700px;
-  padding: 0 1em;
+	margin: 0 auto;
+	max-width: 700px;
+	padding: 0 1em;
 }
 
 .contact-text h4 {
-  margin-top: 4em;
+	margin-top: 4em;
 }
 .contact-form {
 	display: flex;
@@ -463,11 +513,11 @@ button:focus {
 
 /* Footer */
 .footer {
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 1.5em;
-  padding-bottom: .6em;
-  background-color: var(--color-dark);
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 1.5em;
+	padding-bottom: 0.6em;
+	background-color: var(--color-dark);
 }
 
 .footer a {
@@ -481,6 +531,6 @@ button:focus {
 }
 
 .footer p {
-  color: gray;
-  font-size: 10px;
+	color: gray;
+	font-size: 10px;
 }

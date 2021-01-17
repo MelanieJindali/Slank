@@ -8,8 +8,10 @@ const Merch = () => {
 			<div className='wrapper merch-row'>
 				<img src={SM2} alt='Slank Shirts'></img>
 				<div className='merch-text'>
-          <h4>Black and White SLANK Shirts</h4>
-					<p>Description of the shirts...</p>
+					<h4>SLANK Shirts</h4>
+					<p>
+						Made with 100% cotton, Slank shirts come in both black and white.
+					</p>
 					<br />
 					<p>
 						Contact us to get your limited edition SLANK merch while supplies

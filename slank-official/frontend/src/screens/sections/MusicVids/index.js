@@ -1,11 +1,19 @@
 import React from 'react'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+library.add(fab)
 
 const MusicVids = () => {
 	return (
 		<>
 			<div className='collab'>
 				<h1>Collaborations</h1>
-				<p>Music that has been produced by SLANK.</p>
+				<p>
+					Music that has been produced by Slank in collaboration with the
+					Madison community and beyond.
+				</p>
 			</div>
 			<div className='videos'>
 				<div>
@@ -18,7 +26,23 @@ const MusicVids = () => {
 						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 						allowFullScreen
 					></iframe>
-					<p>A description of the inspiration behind the instrumental...</p>
+					<div className='willy'>
+						<p>Follow Willy Bandz on Instagram and Facebook.</p>
+						<div>
+							<a
+								href='https://www.instagram.com/willy_bandz74/?hl=en/'
+								target='_blank'
+							>
+								<FontAwesomeIcon icon={['fab', 'instagram']} />
+							</a>
+							<a
+								href='https://www.facebook.com/will.knight.5036459'
+								target='_blank'
+							>
+								<FontAwesomeIcon icon={['fab', 'facebook']} />
+							</a>
+						</div>
+					</div>
 				</div>
 				<div>
 					<h3>Willy Bandz - "Don't Come Here"</h3>
@@ -30,7 +54,23 @@ const MusicVids = () => {
 						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 						allowFullScreen
 					></iframe>
-					<p>A description of the inspiration behind the instrumental...</p>
+					<div className='willy'>
+						<p>Follow Willy Bandz on Instagram and Facebook.</p>
+						<div>
+							<a
+								href='https://www.instagram.com/willy_bandz74/?hl=en/'
+								target='_blank'
+							>
+								<FontAwesomeIcon icon={['fab', 'instagram']} />
+							</a>
+							<a
+								href='https://www.facebook.com/will.knight.5036459'
+								target='_blank'
+							>
+								<FontAwesomeIcon icon={['fab', 'facebook']} />
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div className='wrapper ig-cta'>
