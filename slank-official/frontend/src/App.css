@@ -104,6 +104,30 @@ button:focus {
 	width: 100%;
 }
 
+@media (max-width: 768px) {
+	.header {
+		flex-direction: column;
+		place-content: center;
+		align-items: center;
+	}
+	.nav-items {
+		position: relative !important;
+		display: block;
+	}
+	.top-socials {
+		position: relative;
+	}
+}
+
+@media (max-width: 425px) {
+	.hero-text {
+		display: none;
+	}
+	.logo {
+		width: 70px;
+	}
+}
+
 .nav-items {
 	position: absolute;
 	top: 10%;
@@ -114,6 +138,32 @@ button:focus {
 	text-decoration: none;
 	color: var(--color-light);
 	padding-left: 2em;
+}
+/* Burger */
+.burger {
+	position: absolute;
+	top: 5%;
+	left: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 2rem;
+	height: 2rem;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	z-index: 10;
+}
+
+.burger div {
+	width: 2rem;
+	height: 0.25rem;
+	background: var(--color-light);
+	border-radius: 10px;
+	transition: all 0.3s linear;
+	position: relative;
+	transform-origin: 1px;
 }
 
 /* Hero Section */
@@ -150,6 +200,20 @@ button:focus {
 	padding: 1.1em 2em;
 	border: none;
 	border-radius: 50px;
+}
+
+@media (max-width: 1200px) {
+	.hero-text::before {
+		z-index: 3;
+		top: 20%;
+		left: 5%;
+	}
+
+	.hero-text button {
+		z-index: 3;
+		top: 30%;
+		left: 5%;
+	}
 }
 
 .hero-divider {
@@ -199,18 +263,48 @@ button:focus {
 	margin: 0 auto;
 }
 
+@media (max-width: 1160px) {
+	.about {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+	}
+	.about-desc {
+		width: 700px;
+	}
+}
+
+@media (max-width: 425px) {
+	.about {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+	}
+	.about-desc, .spdj-text, .merch-text {
+		width: 275px !important;
+  }
+  .divider svg {
+    display: none !important;
+  }
+  .ig-cta p {
+    text-align: center !important;
+  }
+}
+
 .about-img {
-	max-width: 500px;
+	width: 500px;
 }
 
 .about-desc {
 	flex-direction: column;
-	max-width: 500px;
+	width: 500px;
 	margin-left: 3em;
 }
 
 .about-desc h1 {
-  font-family: var(--ff-header);
+	font-family: var(--ff-header);
 }
 
 .spdj {
@@ -219,10 +313,19 @@ button:focus {
 	margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+	.spdj .row {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		align-items: center;
+	}
+}
+
 .spdj h1 {
 	margin: 0 auto;
-  text-align: center;
-  padding-top: 1em;
+	text-align: center;
+	padding-top: 1em;
 }
 
 .spdj-text {
@@ -262,14 +365,14 @@ button:focus {
 
 /* Song Section */
 .album-container {
-  background-color: var(--color-background);
-  margin: 0 auto;
-  height: 300px;
+	background-color: var(--color-background);
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
 }
 
 .song-section {
 	display: flex;
-	position: relative;
 	justify-content: center;
 	margin: 0;
 	margin-top: 2em;
@@ -277,8 +380,21 @@ button:focus {
 	z-index: 3;
 }
 
+@media (max-width: 768px) {
+	.song-section {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		align-items: center;
+		width: 50%;
+	}
+	.song-card + .song-card {
+		margin-left: 0 !important;
+	}
+}
+
 .ss-header {
-	position: relative;
+	/* position: relative; */
 	margin: 0 auto;
 	text-align: center;
 	font-family: var(--ff-header);
@@ -377,27 +493,34 @@ button:focus {
 .videos {
 	display: flex;
 	justify-content: space-evenly;
-  margin-bottom: 5em;
-  text-align: center;
+	margin-bottom: 5em;
+	text-align: center;
+}
+
+@media (max-width: 1200px) {
+	.videos {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 .videos p {
-  font-size: 14px;
+	font-size: 14px;
 }
 
 .willy {
-  margin: 0 auto;
-  text-align: center;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .willy a {
-  text-decoration: none;
+	text-decoration: none;
 	font-size: 20px;
-  color: var(--color-acct1);
+	color: var(--color-acct1);
 }
 
 .willy a:last-child {
-  padding-left: 1em;
+	padding-left: 1em;
 }
 
 .videos h3 {
@@ -426,6 +549,17 @@ button:focus {
 	padding: 2em 0 5em 0;
 }
 
+@media (max-width: 768px) {
+	.merch .wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.merch img {
+		width: 400px !important;
+	}
+}
+
 .merch h1 {
 	text-align: center;
 	margin-bottom: 1em;
@@ -451,7 +585,7 @@ button:focus {
 .merch-text {
 	display: block;
 	justify-content: space-between;
-	max-width: 250px;
+	width: 250px;
 	margin-left: 2em;
 }
 
