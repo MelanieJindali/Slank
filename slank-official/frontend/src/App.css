@@ -368,7 +368,7 @@ button:focus {
 	background-color: var(--color-background);
 	margin: 0 auto;
 	height: 100%;
-	position: relative;
+  position: relative;
 }
 
 .song-section {
@@ -390,16 +390,25 @@ button:focus {
 	}
 	.song-card + .song-card {
 		margin-left: 0 !important;
-	}
+  }
+  .hero-text {
+    display: none;
+  }
+  .hero-divider {
+    display: none;
+  }
+  .about {
+    position: inherit;
+    padding-top: 1em;
+  }
 }
 
 .ss-header {
-	/* position: relative; */
 	margin: 0 auto;
 	text-align: center;
 	font-family: var(--ff-header);
-	font-size: var(--fs-h1);
-	bottom: -1em;
+  font-size: var(--fs-h1);
+  padding-top: .7em;
 }
 
 .song-section img {
