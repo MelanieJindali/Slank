@@ -28,7 +28,7 @@ const SPDJ = () => {
 				<div className='spdj-text'>
 					<h2>Join us</h2>
 					<p>
-						Find all the latest content regarding the club and find our how you
+						Find all the latest content regarding the club and find out how you
 						can be a part of the community.
 					</p>
 					<div className='spdj-icons'>
