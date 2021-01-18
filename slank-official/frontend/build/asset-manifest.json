@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.81eb67d3.chunk.css",
-    "main.js": "/static/js/main.bc726e88.chunk.js",
-    "main.js.map": "/static/js/main.bc726e88.chunk.js.map",
+    "main.css": "/static/css/main.52f72157.chunk.css",
+    "main.js": "/static/js/main.1da2486e.chunk.js",
+    "main.js.map": "/static/js/main.1da2486e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e49fbc86.js",
     "runtime-main.js.map": "/static/js/runtime-main.e49fbc86.js.map",
     "static/js/2.1cb61951.chunk.js": "/static/js/2.1cb61951.chunk.js",
     "static/js/2.1cb61951.chunk.js.map": "/static/js/2.1cb61951.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.81eb67d3.chunk.css.map": "/static/css/main.81eb67d3.chunk.css.map",
+    "static/css/main.52f72157.chunk.css.map": "/static/css/main.52f72157.chunk.css.map",
     "static/js/2.1cb61951.chunk.js.LICENSE.txt": "/static/js/2.1cb61951.chunk.js.LICENSE.txt",
     "static/media/Beslic Bash.9c89726f.PNG": "/static/media/Beslic Bash.9c89726f.PNG",
     "static/media/App.css": "/static/media/SlankMerch1.b2cf37ae.JPG",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.e49fbc86.js",
     "static/js/2.1cb61951.chunk.js",
-    "static/css/main.81eb67d3.chunk.css",
-    "static/js/main.bc726e88.chunk.js"
+    "static/css/main.52f72157.chunk.css",
+    "static/js/main.1da2486e.chunk.js"
   ]
 }

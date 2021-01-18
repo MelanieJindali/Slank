@@ -202,20 +202,6 @@ button:focus {
 	border-radius: 50px;
 }
 
-@media (max-width: 1200px) {
-	.hero-text::before {
-		z-index: 3;
-		top: 20%;
-		left: 5%;
-	}
-
-	.hero-text button {
-		z-index: 3;
-		top: 30%;
-		left: 5%;
-	}
-}
-
 .hero-divider {
 	position: relative;
 	display: block;
@@ -280,16 +266,29 @@ button:focus {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin: 0 auto;
-	}
-	.about-desc, .spdj-text, .merch-text {
+  }
+  .about-img {
+    position: relative;
+    left: -1em;
+  }
+	.spdj-text, .merch-text {
 		width: 275px !important;
+  }
+  .about-desc {
+    width: 275px !important;
+    position: relative;
+    margin-left: 0 !important;
   }
   .divider svg {
     display: none !important;
   }
   .ig-cta p {
     text-align: center !important;
+    font-size: 10px !important;
+  }
+  .videos iframe {
+    width: 300px;
+    min-width: 275px;
   }
 }
 
@@ -384,6 +383,7 @@ button:focus {
 	.song-section {
 		display: flex;
 		flex-direction: column;
+    padding-top: 2em;
 		margin: 0 auto;
 		align-items: center;
 		width: 50%;
