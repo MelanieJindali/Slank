@@ -137,8 +137,12 @@ button:focus {
 .nav-item {
 	text-decoration: none;
 	color: var(--color-light);
+}
+
+.nav-item + .nav-item {
 	padding-left: 2em;
 }
+
 /* Burger */
 .burger {
 	position: absolute;
