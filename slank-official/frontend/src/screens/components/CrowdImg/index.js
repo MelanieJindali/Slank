@@ -19,7 +19,7 @@ const CrowdImg = () => {
 					></path>
 				</svg>
 			</div>
-			<img src={Crowd} alt='Slanks crowd'></img>
+			<img className='crowd-img' src={Crowd} alt='Slanks crowd'></img>
 		</>
 	)
 }

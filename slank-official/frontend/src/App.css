@@ -451,6 +451,10 @@ button:focus {
 }
 
 /* Crowd Section */
+.crowd-img {
+  width: 100%;
+}
+
 .divider {
 	position: absolute;
 	left: 0;
