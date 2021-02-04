@@ -7,6 +7,7 @@ import MusicVids from './sections/MusicVids'
 import Merch from './sections/Merch'
 import Contact from './sections/Contact'
 import Footer from './sections/Footer'
+import MusicPlayer from './components/MusicPlayer'
 
 
 const HomeScreen = () => {
@@ -20,6 +21,7 @@ const HomeScreen = () => {
 			<Merch />
       <Contact />
       <Footer />
+      <MusicPlayer />
 		</>
 	)
 }

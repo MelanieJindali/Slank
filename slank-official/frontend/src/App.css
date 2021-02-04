@@ -104,30 +104,6 @@ button:focus {
 	width: 100%;
 }
 
-@media (max-width: 768px) {
-	.header {
-		flex-direction: column;
-		place-content: center;
-		align-items: center;
-	}
-	.nav-items {
-		position: relative !important;
-		display: block;
-	}
-	.top-socials {
-		position: relative;
-	}
-}
-
-@media (max-width: 425px) {
-	.hero-text {
-		display: none;
-	}
-	.logo {
-		width: 70px;
-	}
-}
-
 .nav-items {
 	position: absolute;
 	top: 10%;
@@ -253,49 +229,6 @@ button:focus {
 	margin: 0 auto;
 }
 
-@media (max-width: 1160px) {
-	.about {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin: 0 auto;
-	}
-	.about-desc {
-		width: 700px;
-	}
-}
-
-@media (max-width: 425px) {
-	.about {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-  }
-  .about-img {
-    position: relative;
-    left: -1em;
-  }
-	.spdj-text, .merch-text {
-		width: 275px !important;
-  }
-  .about-desc {
-    width: 275px !important;
-    position: relative;
-    margin-left: 0 !important;
-  }
-  .divider svg {
-    display: none !important;
-  }
-  .ig-cta p {
-    text-align: center !important;
-    font-size: 10px !important;
-  }
-  .videos iframe {
-    width: 300px;
-    min-width: 275px;
-  }
-}
-
 .about-img {
 	width: 500px;
 }
@@ -383,30 +316,6 @@ button:focus {
 	z-index: 3;
 }
 
-@media (max-width: 768px) {
-	.song-section {
-		display: flex;
-		flex-direction: column;
-    padding-top: 2em;
-		margin: 0 auto;
-		align-items: center;
-		width: 50%;
-	}
-	.song-card + .song-card {
-		margin-left: 0 !important;
-  }
-  .hero-text {
-    display: none;
-  }
-  .hero-divider {
-    display: none;
-  }
-  .about {
-    position: inherit;
-    padding-top: 1em;
-  }
-}
-
 .ss-header {
 	margin: 0 auto;
 	text-align: center;
@@ -443,7 +352,7 @@ button:focus {
 	justify-content: center;
 	align-content: center;
 	background: var(--gradient2);
-	z-index: 1;
+	z-index: 0;
 	position: relative;
 	top: -5.2em;
 	padding: 3.5em 0 0.4em 0;
@@ -514,12 +423,7 @@ button:focus {
 	text-align: center;
 }
 
-@media (max-width: 1200px) {
-	.videos {
-		display: flex;
-		flex-direction: column;
-	}
-}
+
 
 .videos p {
 	font-size: 14px;
@@ -564,17 +468,6 @@ button:focus {
 	position: relative;
 	margin: 0 auto;
 	padding: 2em 0 5em 0;
-}
-
-@media (max-width: 768px) {
-	.merch .wrapper {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	.merch img {
-		width: 400px !important;
-	}
 }
 
 .merch h1 {
@@ -684,4 +577,112 @@ button:focus {
 .footer p {
 	color: gray;
 	font-size: 10px;
+}
+
+iframe.music-player {
+  width: 100%;
+  bottom: 0;
+  position: sticky;
+  z-index: 1000;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+	.videos {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 1160px) {
+	.about {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+	}
+	.about-desc {
+		width: 700px;
+	}
+}
+
+@media (max-width: 768px) {
+  .header {
+		flex-direction: column;
+		place-content: center;
+		align-items: center;
+	}
+	.nav-items {
+		position: relative !important;
+		display: block;
+	}
+	.top-socials {
+		position: relative;
+  }
+  .song-section {
+		display: flex;
+		flex-direction: column;
+    padding-top: 2em;
+		margin: 0 auto;
+		align-items: center;
+		width: 50%;
+	}
+	.song-card + .song-card {
+		margin-left: 0 !important;
+  }
+  .hero-text {
+    display: none;
+  }
+  .hero-divider {
+    display: none;
+  }
+  .about {
+    position: inherit;
+    padding-top: 1em;
+  }
+	.merch .wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.merch img {
+		width: 400px !important;
+	}
+}
+
+@media (max-width: 425px) {
+	.hero-text {
+		display: none;
+	}
+	.logo {
+		width: 70px;
+  }
+  .about {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+  }
+  .about-img {
+    position: relative;
+    left: -1em;
+  }
+	.spdj-text, .merch-text {
+		width: 275px !important;
+  }
+  .about-desc {
+    width: 275px !important;
+    position: relative;
+    margin-left: 0 !important;
+  }
+  .divider svg {
+    display: none !important;
+  }
+  .ig-cta p {
+    text-align: center !important;
+    font-size: 10px !important;
+  }
+  .videos iframe {
+    width: 300px;
+    min-width: 275px;
+  }
 }

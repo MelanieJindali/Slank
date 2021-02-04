@@ -6,7 +6,7 @@ const Hero = () => {
 		<>
 			<span className='hero-text'>
 				<a
-					href='https://distrokid.com/hyperfollow/slank1/quarantine-dreams'
+					href='https://distrokid.com/hyperfollow/slank1/mixed-emotions-instrumental'
 					target='_blank'
 				>
 					<button>LISTEN</button>
