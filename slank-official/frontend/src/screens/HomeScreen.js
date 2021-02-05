@@ -12,7 +12,7 @@ import MusicPlayer from './components/MusicPlayer'
 
 const HomeScreen = () => {
 	return (
-		<>
+		<div className='showcase'>
 			<Hero />
 			<About />
 			<SPDJ />
@@ -22,7 +22,7 @@ const HomeScreen = () => {
       <Contact />
       <Footer />
       <MusicPlayer />
-		</>
+		</div>
 	)
 }
 
