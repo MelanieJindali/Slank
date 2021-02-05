@@ -1,9 +1,11 @@
 import React from 'react'
 import Slank1 from './DJSlank1.jpg'
+import Header from '../../components/Header'
 
 const Hero = () => {
 	return (
 		<>
+			<Header />
 			<span className='hero-text'>
 				<a
 					href='https://distrokid.com/hyperfollow/slank1/mixed-emotions-instrumental'
